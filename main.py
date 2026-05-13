@@ -1,0 +1,12 @@
+import sys
+from PySide6.QtWidgets import QApplication
+from controller import Controller
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    
+    #Build the ui
+    mainWindow = Controller()
+    mainWindow.show()
+    
+    sys.exit(app.exec())
